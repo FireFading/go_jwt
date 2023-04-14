@@ -6,3 +6,8 @@
 
 ## run
 - `go run main.go`
+
+## connect to db:
+- `docker exec -it mysql mysql -uappuser -psecretpassword`
+- `USE app;` - choose database
+- `SHOW TABLES;` - list tables
