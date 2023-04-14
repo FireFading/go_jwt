@@ -1,0 +1,20 @@
+# Go binary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go test and coverage files
+*.test
+*.out
+*.prof
+
+# Go build files
+/bin/
+/pkg/
+/vendor/
+
+# Go module files
+/go.mod
+/go.sum
