@@ -5,7 +5,7 @@
 - `go get github.com/gofiber/fiber/v2`
 
 ## run
-- `go run main.go`
+- `docker compose up --build` OR `go run main.go`
 
 ## connect to db:
 - `docker exec -it mysql mysql -uappuser -psecretpassword`

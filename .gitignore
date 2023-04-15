@@ -15,6 +15,3 @@
 /pkg/
 /vendor/
 
-# Go module files
-/go.mod
-/go.sum

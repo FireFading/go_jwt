@@ -5,11 +5,7 @@ services:
     container_name: mysql
     image: mysql:latest
     restart: always
-    environment:
-      MYSQL_DATABASE: app
-      MYSQL_USER: appuser
-      MYSQL_PASSWORD: secretpassword
-      MYSQL_ROOT_PASSWORD: secretpassword
+    env_file: .env.example
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
@@ -28,7 +24,7 @@ services:
       - .:/code/
     restart: always
     environment:
-      DB_HOST: db
+      DB_HOST: "mysql"
       DB_PORT: "3306"
       DB_NAME: app
       DB_USER: appuser
